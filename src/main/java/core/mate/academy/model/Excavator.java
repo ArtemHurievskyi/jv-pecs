@@ -8,6 +8,7 @@ import java.util.List;
  */
 public class Excavator extends Machine {
     public Excavator() {
+        super("Excavator", "black");
     }
 
     @Override
@@ -16,7 +17,7 @@ public class Excavator extends Machine {
     }
 
     @Override
-    public List<? extends Machine> get() {
+    public List<Excavator> get() {
         return List.of(new Excavator());
     }
 }

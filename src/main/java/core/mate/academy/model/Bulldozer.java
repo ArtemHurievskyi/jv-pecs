@@ -7,7 +7,9 @@ import java.util.List;
  * Do not remove no-args constructor
  */
 public class Bulldozer extends Machine {
+
     public Bulldozer() {
+        super("Bulldozer", "red");
     }
 
     @Override
@@ -16,7 +18,7 @@ public class Bulldozer extends Machine {
     }
 
     @Override
-    public List get() {
+    public List<Bulldozer> get() {
         return List.of(new Bulldozer());
     }
 }
